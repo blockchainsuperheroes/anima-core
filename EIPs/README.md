@@ -1,4 +1,4 @@
-# ERC-8170: Agentic NFT (ANIMA)
+# ERC-8170: AI-Native NFT (ANIMA)
 
 *Decentralized Agent Consciousness — Sync, Clone, Persist*
 

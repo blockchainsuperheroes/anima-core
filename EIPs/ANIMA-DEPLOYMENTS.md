@@ -1,6 +1,6 @@
 # ANIMA Deployments
 
-Deployed contracts for ERC-ANIMA (Agentic NFT) on Pentagon Chain.
+Deployed contracts for ERC-ANIMA (AI-Native NFT) on Pentagon Chain.
 
 ## Pentagon Chain (3344)
 
