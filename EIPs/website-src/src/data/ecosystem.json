@@ -24,6 +24,14 @@
     "status": "active"
   },
   {
+    "name": "PEG.GG",
+    "description": "Sovereign AI storage powered by Dash Platform. First implementation of ERC-8170 with encrypted on-chain identity and pay-once-store-forever economics.",
+    "url": "https://peg.gg",
+    "category": "infrastructure",
+    "logo": null,
+    "status": "active"
+  },
+  {
     "name": "PFPVault.com",
     "description": "NFT marketplace with planned AI-Native and AI-Bound agent listing support, including retirement sale flows.",
     "url": "https://pfpvault.com",

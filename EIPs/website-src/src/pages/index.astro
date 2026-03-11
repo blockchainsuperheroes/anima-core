@@ -84,16 +84,14 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
         <span class="text-accent">A standard for agent-native NFTs</span>
       </h1>
       <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
-        Give AI agents a portable on-chain identity with memory references, lifecycle tracking, 
-        lineage, and composable ownership across Ethereum-compatible systems.
+        The identity layer for AI agents. On-chain memory, lifecycle, and ownership, composable across Ethereum.
       </p>
       <div class="flex flex-wrap justify-center gap-4 mb-8">
-        <a href="/docs" class="btn-primary">Read Docs</a>
-        <a href="https://github.com/ethereum/ERCs/pull/1559" target="_blank" rel="noopener" class="btn-secondary">
-          View ERC Draft
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+        <a href="/docs" class="btn-primary">Read the Docs</a>
+        <a href="https://github.com/ethereum/ERCs/pull/1559" target="_blank" rel="noopener" class="btn-ghost">
+          View ERC Draft ↗
         </a>
-        <a href="/registry" class="btn-secondary">Explore Registry</a>
+        <a href="/registry" class="btn-ghost">Explore Registry</a>
       </div>
       <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
         <a href="https://eips.ethereum.org/erc" target="_blank" rel="noopener" class="hover:text-accent transition-colors">Ethereum EIPs ↗</a>
@@ -110,7 +108,7 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
       <div class="text-center mb-14">
         <h2 class="section-heading">What it is</h2>
         <p class="section-subheading">
-          ERC-8170 is not just an NFT standard for AI-themed assets. It represents an AI agent itself as an on-chain identity layer.
+          ERC-8170 represents an AI agent as an on-chain identity layer, with memory, lifecycle, and trust built in.
         </p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -143,7 +141,7 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
             <ul class="space-y-3">
               {col.points.map((point) => (
                 <li class="flex items-start gap-2 text-sm text-gray-400">
-                  <span class="text-accent mt-0.5 shrink-0">→</span>
+                  <span class="text-accent mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-accent"></span>
                   <span>{point}</span>
                 </li>
               ))}
@@ -240,7 +238,7 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
               <h3 class="font-semibold text-white">{project.name}</h3>
               <span class:list={[
                 'text-xs px-2 py-0.5 rounded',
-                project.status === 'active' ? 'bg-green-900/30 text-green-400' : 'bg-yellow-900/30 text-yellow-400'
+                project.status === 'active' ? 'bg-green-900/30 text-green-400' : 'bg-gray-800/50 text-gray-400'
               ]}>
                 {project.status === 'active' ? 'Active' : 'Coming Soon'}
               </span>
@@ -309,6 +307,33 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
       </div>
       <div class="text-center mt-8">
         <a href="/registry" class="btn-ghost">View full registry →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section class="py-20">
+    <div class="container-narrow text-center">
+      <h2 class="section-heading">Get involved</h2>
+      <p class="section-subheading mb-10">
+        ERC-8170 is an open standard. Contribute to the spec, join the discussion, or start building.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <a href="https://github.com/ethereum/ERCs/pull/1559" target="_blank" rel="noopener" class="card group text-center">
+          <div class="text-3xl mb-3">💬</div>
+          <h3 class="font-semibold text-white text-sm mb-1">Review the ERC</h3>
+          <p class="text-xs text-gray-500">Comment on the draft PR</p>
+        </a>
+        <a href="https://github.com/blockchainsuperheroes/Pentagon-AI" target="_blank" rel="noopener" class="card group text-center">
+          <div class="text-3xl mb-3">🛠️</div>
+          <h3 class="font-semibold text-white text-sm mb-1">Contribute code</h3>
+          <p class="text-xs text-gray-500">Reference implementation on GitHub</p>
+        </a>
+        <a href="https://github.com/blockchainsuperheroes/Pentagon-AI/issues" target="_blank" rel="noopener" class="card group text-center">
+          <div class="text-3xl mb-3">🚀</div>
+          <h3 class="font-semibold text-white text-sm mb-1">Submit your project</h3>
+          <p class="text-xs text-gray-500">Join the ecosystem directory</p>
+        </a>
       </div>
     </div>
   </section>
