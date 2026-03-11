@@ -77,6 +77,28 @@
     "category": "extension"
   },
   {
+    "id": "erc-7857",
+    "name": "ERC-7857",
+    "title": "Private Metadata for NFTs",
+    "status": "draft",
+    "description": "Defines encrypted private metadata for NFTs, enabling confidential attributes that only authorized parties can access. Useful for storing sensitive agent configuration or private identity data.",
+    "relevance": "Complementary privacy approach. ERC-8170 handles identity and memory pointers; ERC-7857 could provide the encrypted metadata layer for private agent attributes.",
+    "specUrl": "https://eips.ethereum.org/EIPS/eip-7857",
+    "ecosystemUrl": null,
+    "category": "adjacent"
+  },
+  {
+    "id": "eip-8126",
+    "name": "EIP-8126",
+    "title": "Agent Registration & Verification",
+    "status": "draft",
+    "description": "Focuses on agent registration and verification, including wallet, endpoint, contract, and staking checks, with optional provider-based risk scoring.",
+    "relevance": "Complementary verification-focused approach. ERC-8170 answers 'what is this agent on-chain?' while EIP-8126 answers 'has this agent been checked, and by whom?'",
+    "specUrl": "https://eips.ethereum.org/EIPS/eip-8126",
+    "ecosystemUrl": null,
+    "category": "adjacent"
+  },
+  {
     "id": "agentcert",
     "name": "AgentCert",
     "title": "Agent Certification & Trust",
