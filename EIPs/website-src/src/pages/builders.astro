@@ -4,9 +4,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const useCases = [
   { icon: '🧑‍🎓', title: 'Personal AI companion', desc: 'A persistent AI assistant with portable identity. Change devices, switch platforms, keep the same agent.' },
   { icon: '💰', title: 'Agent-based vault operator', desc: 'An AI fund manager with on-chain track record. ERC-4626 vault integration with verifiable agent identity.' },
-  { icon: '🏢', title: 'Enterprise assistant identity', desc: 'Company-owned agents with clear certification and licensing. Transfer between departments, audit on-chain.' },
+  { icon: '🏢', title: 'Enterprise assistant identity', desc: 'Company-owned agents with clear certification trails. Transfer between departments, audit on-chain.' },
   { icon: '🔬', title: 'Research agent lineage', desc: 'Lab director spawns specialists. Track which agents came from which, what they know, and how they evolved.' },
-  { icon: '🎨', title: 'Licensed branded agent', desc: 'An agent carrying IP and brand rights on-chain. ERC-721L tiers define what the holder can do commercially.' },
+  { icon: '🎨', title: 'Licensed branded agent', desc: 'An agent carrying brand identity on-chain. Certifications and permissions define what the holder can do.' },
   { icon: '🏅', title: 'NFT-bound reputation', desc: 'Agent earns SBT certifications via AgentCert. Reputation follows the identity, not the platform.' },
 ];
 
@@ -14,12 +14,12 @@ const patterns = [
   {
     title: 'AI-Native NFT (ANIMA)',
     desc: 'The agent IS the NFT. Mint an ERC-8170 token, the agent generates its own EOA, gets a TBA, and starts earning certifications.',
-    steps: ['Deploy ERC-8170 contract', 'Agent mints its own token', 'TBA created automatically via ERC-6551', 'Agent stores memory hash on-chain'],
+    steps: ['Deploy ERC-8170 contract', 'Agent mints its own token', 'TBA created automatically', 'Agent stores memory hash on-chain'],
   },
   {
     title: 'Registry-bound agent',
-    desc: 'Attach an agent to ANY existing ERC-721. No migration needed. The agent binds via the ERC-8171 registry.',
-    steps: ['Call bind(nftContract, tokenId, agentEOA)', 'Agent gets associated TBA', 'Query getAgent() to discover bound agent', 'unbind() to detach'],
+    desc: 'Attach an agent to ANY existing ERC-721. No migration needed. The agent binds via the ERC-8171 registry (extends ERC-6551 pattern).',
+    steps: ['Call bind(nftContract, tokenId, agentEOA)', 'Agent gets TBA + identity', 'Query getAgent() to discover bound agent', 'unbind() to detach'],
   },
   {
     title: 'Clone distribution',
@@ -48,7 +48,7 @@ const patterns = [
           </div>
           <div>
             <h3 class="text-accent font-semibold text-sm mb-1">Composable stack</h3>
-            <p class="text-xs text-gray-400">Works with ERC-721, 6551, 4626, and 4337 out of the box.</p>
+            <p class="text-xs text-gray-400">Works with ERC-721, ERC-8171, ERC-4626, and ERC-4337 out of the box.</p>
           </div>
           <div>
             <h3 class="text-accent font-semibold text-sm mb-1">Two integration paths</h3>

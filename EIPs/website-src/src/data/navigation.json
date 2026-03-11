@@ -3,50 +3,122 @@
     {
       "title": "Getting Started",
       "items": [
-        { "label": "Introduction", "href": "/docs" },
-        { "label": "Core Concepts", "href": "/docs/core-concepts" },
-        { "label": "How It Works", "href": "/docs/how-it-works" }
+        {
+          "label": "Introduction",
+          "href": "/docs"
+        },
+        {
+          "label": "Core Concepts",
+          "href": "/docs/core-concepts"
+        },
+        {
+          "label": "How It Works",
+          "href": "/docs/how-it-works"
+        }
       ]
     },
     {
       "title": "Technical Guide",
       "items": [
-        { "label": "ERC Interface", "href": "/docs/interface" },
-        { "label": "Lifecycle Model", "href": "/docs/lifecycle" },
-        { "label": "Storage & Memory", "href": "/docs/storage" },
-        { "label": "Security", "href": "/docs/security" }
+        {
+          "label": "ERC Interface",
+          "href": "/docs/interface"
+        },
+        {
+          "label": "Lifecycle Model",
+          "href": "/docs/lifecycle"
+        },
+        {
+          "label": "Storage & Memory",
+          "href": "/docs/storage"
+        },
+        {
+          "label": "Security",
+          "href": "/docs/security"
+        }
       ]
     },
     {
       "title": "Standards",
       "items": [
-        { "label": "Related Standards", "href": "/docs/related-standards" }
+        {
+          "label": "Related Standards",
+          "href": "/docs/related-standards"
+        }
       ]
     },
     {
       "title": "Resources",
       "items": [
-        { "label": "Registry", "href": "/registry" },
-        { "label": "Ecosystem", "href": "/ecosystem" },
-        { "label": "FAQ", "href": "/faq" }
+        {
+          "label": "Registry",
+          "href": "/registry"
+        },
+        {
+          "label": "Ecosystem",
+          "href": "/ecosystem"
+        },
+        {
+          "label": "FAQ",
+          "href": "/faq"
+        }
       ]
     }
   ],
   "main": [
-    { "label": "Home", "href": "/" },
-    { "label": "What is ERC-8170", "href": "/what-is-erc8170" },
-    { "label": "Docs", "href": "/docs" },
-    { "label": "Registry", "href": "/registry" },
-    { "label": "Standards", "href": "/standards" },
-    { "label": "Licensing", "href": "/licensing" },
-    { "label": "Ecosystem", "href": "/ecosystem" },
-    { "label": "Builders", "href": "/builders" },
-    { "label": "FAQ", "href": "/faq" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "What is ERC-8170",
+      "href": "/what-is-erc8170"
+    },
+    {
+      "label": "Docs",
+      "href": "/docs"
+    },
+    {
+      "label": "Registry",
+      "href": "/registry"
+    },
+    {
+      "label": "Standards",
+      "href": "/standards"
+    },
+    {
+      "label": "Ecosystem",
+      "href": "/ecosystem"
+    },
+    {
+      "label": "Builders",
+      "href": "/builders"
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq"
+    }
   ],
   "utility": [
-    { "label": "Ethereum EIPs", "href": "https://eips.ethereum.org/erc", "external": true },
-    { "label": "ERC Draft", "href": "https://github.com/ethereum/ERCs/pull/1559", "external": true },
-    { "label": "Magicians", "href": "https://ethereum-magicians.org/", "external": true },
-    { "label": "GitHub", "href": "https://github.com/blockchainsuperheroes/Pentagon-AI", "external": true }
+    {
+      "label": "Ethereum EIPs",
+      "href": "https://eips.ethereum.org/erc",
+      "external": true
+    },
+    {
+      "label": "ERC Draft",
+      "href": "https://github.com/ethereum/ERCs/pull/1559",
+      "external": true
+    },
+    {
+      "label": "Magicians",
+      "href": "https://ethereum-magicians.org/",
+      "external": true
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/blockchainsuperheroes/Pentagon-AI",
+      "external": true
+    }
   ]
 }

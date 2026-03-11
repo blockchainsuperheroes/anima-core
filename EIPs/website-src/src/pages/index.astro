@@ -62,9 +62,8 @@ const whyItMatters = [
 
 const stackLayers = [
   { name: 'AgentCert', desc: 'Certification & trust', color: '#f5a623' },
-  { name: 'ERC-721L / ERC-6551L', desc: 'License & rights layer', color: '#667eea' },
   { name: 'ERC-8170', desc: 'Agent identity & memory', color: '#4ecdc4', highlight: true },
-  { name: 'ERC-6551', desc: 'Token-bound accounts', color: '#f5576c' },
+  { name: 'ERC-8171', desc: 'Agent binding registry (extends ERC-6551 w/ ERC-8170)', color: '#3dbdb5' },
   { name: 'ERC-4626', desc: 'Vault standard', color: '#9b59b6' },
   { name: 'ERC-721', desc: 'NFT standard', color: '#888' },
 ];
@@ -129,8 +128,8 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
       <div class="text-center mb-14">
         <h2 class="section-heading">Why it matters</h2>
         <p class="section-subheading">
-          ERC-721 made unique digital ownership standard. ERC-6551 let NFTs act through accounts. 
-          ERC-8170 connects identity, continuity, and agent lifecycle into that world.
+          ERC-721 made unique digital ownership standard. ERC-6551 let NFTs act through wallets. 
+          ERC-8170 adds identity, memory, and lifecycle. ERC-8171 binds it all to any NFT.
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -158,7 +157,7 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
       <div class="text-center mb-14">
         <h2 class="section-heading">How it works</h2>
         <p class="section-subheading">
-          ERC-8170 sits within the composable Ethereum standards stack, connecting identity to accounts, vaults, licensing, and trust.
+          ERC-8170 sits within the composable Ethereum standards stack, connecting identity to accounts, vaults, and trust.
         </p>
       </div>
       <div class="max-w-2xl mx-auto">

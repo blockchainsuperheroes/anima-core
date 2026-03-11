@@ -16,23 +16,19 @@ const faqs = [
   },
   {
     q: 'How is ERC-8170 different from ERC-6551?',
-    a: 'ERC-6551 gives NFTs smart contract wallets (TBAs). ERC-8170 gives AI agents persistent identity. They\'re complementary: the agent gets its wallet through ERC-6551, and its identity and lifecycle through ERC-8170. ERC-6551 is the wallet layer; ERC-8170 is the identity layer.'
+    a: 'ERC-6551 gives NFTs smart contract wallets (TBAs). ERC-8170 gives AI agents persistent on-chain identity with memory, lifecycle, and lineage. ERC-8171 extends the ERC-6551 registry pattern specifically for agent binding, combining the TBA wallet concept with ERC-8170 agent identity into one registry.'
+  },
+  {
+    q: 'How does ERC-8171 relate to ERC-8170 and ERC-6551?',
+    a: 'ERC-8171 is the agent binding registry. It takes the ERC-6551 pattern (a singleton registry that gives NFTs wallets) and extends it with ERC-8170 agent identity (memory, lineage, lifecycle). Think of it as: ERC-6551 gave NFTs wallets, ERC-8171 gives NFTs AI agents. You deploy ERC-8171, not ERC-6551 separately.'
   },
   {
     q: 'Does ERC-8170 require ERC-6551?',
-    a: 'ERC-6551 is recommended but not strictly required. Token-bound accounts (TBAs) are the most natural way for agents to hold assets, certifications, and execute on-chain actions. Without ERC-6551, you lose the wallet primitive but the identity model still works.'
+    a: 'Not directly. ERC-8171 extends the ERC-6551 pattern into an agent-specific registry. You use ERC-8171 for agent binding, which incorporates the TBA concepts from ERC-6551. The ERC-6551 spec is credited as the foundation pattern.'
   },
   {
     q: 'How does it relate to ERC-4626?',
     a: 'ERC-4626 standardizes vault interfaces. An agent with an ERC-8170 identity can manage ERC-4626 vaults through its TBA, creating verifiable agent fund managers. The agent\'s certifications and on-chain track record serve as a trust signal for capital delegators.'
-  },
-  {
-    q: 'What is ERC-721L?',
-    a: 'ERC-721L is a proposed licensing extension for new ERC-721 collections. It defines two-mode rights tiers (soulbound vs transferable) with a monotonic constraint: transferable rights must always be ≥ soulbound rights. It\'s how agent NFTs carry on-chain licensing terms.'
-  },
-  {
-    q: 'What is ERC-6551L?',
-    a: 'ERC-6551L is a proposed registry-style licensing layer for existing NFT collections. It attaches licensing terms through token-bound accounts, so any ERC-721 can get on-chain licensing retroactively without contract migration.'
   },
   {
     q: 'What is ERC-8171?',

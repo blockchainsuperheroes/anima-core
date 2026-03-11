@@ -11,14 +11,14 @@
     "category": "foundation"
   },
   {
-    "id": "erc-6551",
-    "name": "ERC-6551",
-    "title": "Non-fungible Token Bound Accounts",
-    "status": "final",
-    "description": "Gives every NFT its own smart contract wallet (TBA). Agents use TBAs to hold assets, certifications, and execute on-chain actions.",
-    "relevance": "Agents get their own wallet through ERC-6551, enabling them to hold tokens, SBTs, and interact with DeFi.",
-    "specUrl": "https://eips.ethereum.org/EIPS/eip-6551",
-    "ecosystemUrl": "https://tokenbound.org",
+    "id": "erc-8171",
+    "name": "ERC-8171",
+    "title": "Agent Binding Registry (extends ERC-6551)",
+    "status": "proposed",
+    "description": "The agent binding registry for ERC-8170. Extends the ERC-6551 Token Bound Account pattern to bind AI agents to any existing ERC-721 token, combining TBA wallets with agent identity, memory, and lifecycle.",
+    "relevance": "Core companion to ERC-8170. Extends ERC-6551's registry pattern with agent binding, memory sync, cloning, and unbind/rebind flows.",
+    "specUrl": "https://github.com/ethereum/ERCs/pull/1559",
+    "ecosystemUrl": null,
     "category": "foundation"
   },
   {
@@ -44,37 +44,15 @@
     "category": "foundation"
   },
   {
-    "id": "erc-721l",
-    "name": "ERC-721L",
-    "title": "NFT License Registry",
-    "status": "proposed",
-    "description": "A licensing layer for new NFT collections. Defines rights, derivative use, and commercial terms directly in the token contract.",
-    "relevance": "Enables AI-Native NFTs to carry embedded licensing terms — who can clone, what derivatives are allowed, commercial scope.",
-    "specUrl": "https://github.com/blockchainsuperheroes/Pentagon-AI",
-    "ecosystemUrl": null,
-    "category": "extension"
-  },
-  {
-    "id": "erc-6551l",
-    "name": "ERC-6551L",
-    "title": "TBA License Extension",
-    "status": "proposed",
-    "description": "Brings licensing to existing NFT collections via TBA. No migration needed — attach license terms to any ERC-721 through its token-bound account.",
-    "relevance": "Allows existing NFT holders to add licensing terms retroactively, enabling agent-binding with clear rights.",
-    "specUrl": "https://github.com/blockchainsuperheroes/Pentagon-AI",
-    "ecosystemUrl": null,
-    "category": "extension"
-  },
-  {
-    "id": "erc-8171",
-    "name": "ERC-8171",
-    "title": "Agent Binding Registry (formerly ERC-6551A)",
-    "status": "proposed",
-    "description": "A registry that binds AI agents to any existing ERC-721 token. Enables agent attachment without requiring new token contracts.",
-    "relevance": "Core companion to ERC-8170. Enables binding agents to existing NFTs via bind()/unbind() pattern.",
-    "specUrl": "https://github.com/ethereum/ERCs/pull/1559",
-    "ecosystemUrl": null,
-    "category": "extension"
+    "id": "erc-6551",
+    "name": "ERC-6551",
+    "title": "Token Bound Accounts",
+    "status": "final",
+    "description": "The original Token Bound Account standard. Gives every NFT its own smart contract wallet. ERC-8171 extends this pattern specifically for AI agent binding.",
+    "relevance": "The foundation pattern that ERC-8171 extends. Credited as the architectural inspiration for the agent binding registry.",
+    "specUrl": "https://eips.ethereum.org/EIPS/eip-6551",
+    "ecosystemUrl": "https://tokenbound.org",
+    "category": "adjacent"
   },
   {
     "id": "erc-7857",
