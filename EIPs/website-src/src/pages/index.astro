@@ -61,7 +61,6 @@ const whyItMatters = [
 ];
 
 const stackLayers = [
-  { name: 'AgentCert', desc: 'Certification & trust', color: '#f5a623' },
   { name: 'ERC-8170', desc: 'Agent identity & memory', color: '#4ecdc4', highlight: true },
   { name: 'ERC-8171', desc: 'Agent binding registry (extends ERC-6551 w/ ERC-8170)', color: '#3dbdb5' },
   { name: 'ERC-4626', desc: 'Vault standard', color: '#9b59b6' },
@@ -97,6 +96,40 @@ const relatedStandards = standards.filter(s => s.category === 'foundation');
         <a href="https://ethereum-magicians.org/" target="_blank" rel="noopener" class="hover:text-accent transition-colors">Ethereum Magicians ↗</a>
         <a href="https://github.com/blockchainsuperheroes/ai-core/tree/main/EIPs" target="_blank" rel="noopener" class="hover:text-accent transition-colors">GitHub ↗</a>
         <a href="https://blockchainsuperheroes.github.io/anima-demo/" target="_blank" rel="noopener" class="hover:text-accent transition-colors">ANIMA Demo ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE FOUR PROBLEMS -->
+  <section class="py-20 bg-base-light/30">
+    <div class="container-narrow">
+      <div class="text-center mb-14">
+        <h2 class="section-heading">The problem</h2>
+        <p class="section-subheading">
+          Today's AI agents have no persistent identity. Every platform is a walled garden.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div class="card">
+          <div class="text-2xl mb-3">🔄</div>
+          <h3 class="text-base font-semibold text-white mb-2">Switch devices, lose everything</h3>
+          <p class="text-sm text-gray-400">Your AI forgets everything when you switch devices. Memory, personality, context — gone.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">💀</div>
+          <h3 class="text-base font-semibold text-white mb-2">Platform dies, agent dies</h3>
+          <p class="text-sm text-gray-400">Platform shuts down, your AI disappears. No export, no migration, no continuity.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">💸</div>
+          <h3 class="text-base font-semibold text-white mb-2">Pay forever, own nothing</h3>
+          <p class="text-sm text-gray-400">You pay monthly forever but never own anything. Cancel your subscription, lose your agent.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">🔒</div>
+          <h3 class="text-base font-semibold text-white mb-2">Someone else controls your data</h3>
+          <p class="text-sm text-gray-400">Someone else controls your AI's memory, identity, and access. You're renting, not owning.</p>
+        </div>
       </div>
     </div>
   </section>

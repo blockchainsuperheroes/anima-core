@@ -38,6 +38,41 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </section>
 
+      <!-- Centralized vs Decentralized -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold text-white mb-4">Centralized vs decentralized</h2>
+        <p class="text-gray-400 leading-relaxed mb-6">
+          Most AI agents today run inside centralized platforms. The platform controls everything: 
+          the model, the identity, the payments, and the data. If you leave, nothing comes with you.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-red-900/10 border border-red-900/20 rounded-xl p-5">
+            <h3 class="font-semibold text-red-400 mb-3">Centralized AI platforms</h3>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>→ Platform hosts the model</li>
+              <li>→ Platform controls identity</li>
+              <li>→ Platform processes payments</li>
+              <li>→ Platform owns the data</li>
+              <li>→ Closed ecosystem, single gatekeeper</li>
+            </ul>
+          </div>
+          <div class="bg-accent/5 border border-accent/20 rounded-xl p-5">
+            <h3 class="font-semibold text-accent mb-3">Decentralized agent stack</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>→ Agent runs on any runtime (OpenClaw, etc.)</li>
+              <li>→ Identity is on-chain (ERC-8170)</li>
+              <li>→ Payments via agent's own wallet (TBA)</li>
+              <li>→ Agent controls its own encrypted data</li>
+              <li>→ Open standards, no single gatekeeper</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm mt-4">
+          ERC-8170 is the identity layer in the decentralized stack. It doesn't replace runtimes or models. 
+          It gives agents a portable, verifiable identity that works across all of them.
+        </p>
+      </section>
+
       <!-- Why ERC-721 Alone Isn't Enough -->
       <section class="mb-16">
         <h2 class="text-2xl font-bold text-white mb-4">Why ERC-721 alone isn't enough</h2>
