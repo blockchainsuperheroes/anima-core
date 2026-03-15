@@ -59,17 +59,12 @@
 </ul>
 <p><strong>How it relates to ERC-8170:</strong> ERC-8170 handles identity and memory pointers. ERC-7857 could provide the encrypted metadata layer for private agent attributes, complementing the public identity with a confidential data channel.</p>
 <h3 id="eip-8126--agent-registration--verification-draft">EIP-8126 — Agent Registration &amp; Verification (Draft)</h3>
-<p>EIP-8126 focuses on agent registration and verification, including wallet, endpoint, contract, and staking checks, with optional provider-based risk scoring. Single-authored proposal with narrower scope than ERC-8004.</p>
+<p>Single-authored proposal for agent registration and verification. Its scope (registration, wallet checks, staking verification) is largely subsumed by ERC-8004’s Identity and Validation Registries, which have broader institutional backing (MetaMask, EF, Google, Coinbase).</p>
 <ul>
 <li><strong>Status:</strong> Draft</li>
 <li><strong>Spec:</strong> <a href="https://eips.ethereum.org/EIPS/eip-8126">EIP-8126</a></li>
 </ul>
-<p><strong>How it relates to ERC-8170:</strong></p>
-<ul>
-<li><strong>ERC-8170</strong> answers: <em>What is this agent on-chain? How does it persist? What does it control?</em></li>
-<li><strong>EIP-8126</strong> answers: <em>Has this agent been checked? By whom? Against what criteria?</em></li>
-</ul>
-<p>ANIMA is compatible with EIP-8126 today and any successor verification standard. The spec does not hard-depend on 8126. Note that ERC-8004’s Validation Registry covers similar ground with broader institutional backing.</p>
+<p>ANIMA is compatible with EIP-8126 and any other verification standard. For most use cases, ERC-8004 is the recommended composability path.</p>
 <h2 id="ecosystem-projects">Ecosystem Projects</h2>
 <h3 id="agentcertio">AgentCert.io</h3>
 <p>On-chain certification system for AI agents. Issues SBT-based credentials (L1-L4 badges) to agent TBAs.</p>
