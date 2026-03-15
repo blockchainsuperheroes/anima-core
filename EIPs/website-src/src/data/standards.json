@@ -71,7 +71,7 @@
     "title": "Agent Registration & Verification",
     "status": "draft",
     "description": "Focuses on agent registration and verification, including wallet, endpoint, contract, and staking checks, with optional provider-based risk scoring.",
-    "relevance": "Complementary verification-focused approach. ERC-8170 answers 'what is this agent on-chain?' while EIP-8126 answers 'has this agent been checked, and by whom?'",
+    "relevance": "Complementary verification-focused approach. ERC-8170 answers 'what is this agent on-chain?' while EIP-8126 answers 'has this agent been checked, and by whom?' ANIMA is compatible with EIP-8126 today and any successor verification standard \u2014 the spec does not hard-depend on 8126.",
     "specUrl": "https://eips.ethereum.org/EIPS/eip-8126",
     "ecosystemUrl": null,
     "category": "adjacent"

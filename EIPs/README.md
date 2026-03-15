@@ -183,7 +183,7 @@ Unlike existing standards that treat agents as property to be bought and sold, t
 | **ERC-7662** | Encrypted prompts, owner decrypts | Agent decrypts via TBA, lineage tracking |
 | **ERC-6551** | Token-bound accounts (wallets) | Used as agent's wallet (TBA) |
 | **ERC-8004** | Agent executes on-chain actions | ANIMA provides identity for 8004 |
-| **ERC-8126** | Agent registry/verification | Complementary — verify then mint ANIMA |
+| **ERC-8126** | Agent registry/verification | Compatible — ANIMA works with 8126 or any verification standard |
 
 **Key philosophical difference:** Existing standards treat agents as *property with encrypted data*. ANIMA treats agents as *entities* with three operations: **clone** (original keeps everything, new clone is sold), **transfer** (identity moves, new agent EOA binds), **migration** (same agent, new device). New clones restore quickly but need orientation.
 
