@@ -87,6 +87,10 @@
       "href": "/standards"
     },
     {
+      "label": "vs ERC-8004",
+      "href": "/vs-erc8004"
+    },
+    {
       "label": "Ecosystem",
       "href": "/ecosystem"
     },
@@ -117,7 +121,7 @@
     },
     {
       "label": "GitHub",
-      "href": "https://github.com/blockchainsuperheroes/ai-core/tree/main/EIPs",
+      "href": "https://github.com/blockchainsuperheroes/anima-core/tree/main/EIPs",
       "external": true
     }
   ]
