@@ -2,20 +2,32 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import registries from '../data/registries.json';
 ---
-<BaseLayout title="Registry — ERC-8170" description="Live ERC-8170 deployments, agent registries, and related contract addresses across chains.">
+<BaseLayout title="Registry — ERC-8170" description="Live ERC-8170 and ERC-8171 deployments across chains.">
   <div class="container-narrow py-16">
     <div class="text-center mb-16">
       <h1 class="section-heading">Registry</h1>
       <p class="section-subheading">
-        Live ERC-8170 deployments and agent registries across chains. All addresses are verified and linked to block explorers.
+        Live ERC-8170 token contracts and ERC-8171 agent binding registries deployed across chains.
       </p>
     </div>
 
-    <!-- ERC-8170 Registries -->
+    <!-- What's listed here -->
+    <div class="bg-white/[0.03] border border-white/10 rounded-xl p-6 mb-12 max-w-3xl mx-auto">
+      <h2 class="text-lg font-semibold text-white mb-3">What's on this page</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div>
+          <h3 class="text-accent font-semibold mb-1">ERC-8170 Tokens</h3>
+          <p class="text-gray-400">AI-native NFT contracts where the agent IS the NFT. Standalone agent identity.</p>
+        </div>
+        <div>
+          <h3 class="text-accent font-semibold mb-1">ERC-8171 Registries</h3>
+          <p class="text-gray-400">Agent binding registries that attach agents to ANY existing ERC-721. No contract changes needed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deployments -->
     <section class="mb-20">
-      <h2 class="text-2xl font-bold text-white mb-2">ERC-8170 Registries</h2>
-      <p class="text-gray-500 mb-8">Official ERC-8170 contract deployments.</p>
-      
       {registries.erc8170.map((chain) => (
         <div class="mb-8">
           <div class="flex items-center gap-3 mb-4">
@@ -27,66 +39,6 @@ import registries from '../data/registries.json';
             ]}>
               {chain.status}
             </span>
-          </div>
-          
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="border-b border-white/10">
-                  <th class="text-left py-3 px-4 text-gray-500 font-medium">Contract</th>
-                  <th class="text-left py-3 px-4 text-gray-500 font-medium">Type</th>
-                  <th class="text-left py-3 px-4 text-gray-500 font-medium">Address</th>
-                  <th class="text-left py-3 px-4 text-gray-500 font-medium">Status</th>
-                  <th class="text-left py-3 px-4 text-gray-500 font-medium">Explorer</th>
-                </tr>
-              </thead>
-              <tbody>
-                {chain.contracts.map((contract) => (
-                  <tr class="border-b border-white/5 hover:bg-white/[0.02]">
-                    <td class="py-3 px-4 text-white font-medium">{contract.name}</td>
-                    <td class="py-3 px-4 text-gray-400">{contract.type}</td>
-                    <td class="py-3 px-4">
-                      <span 
-                        class="copy-address"
-                        data-copy={contract.address}
-                        title="Click to copy"
-                      >
-                        <span class="copy-label font-mono text-xs">{contract.address}</span>
-                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
-                      </span>
-                    </td>
-                    <td class="py-3 px-4">
-                      <span class="text-xs bg-green-900/30 text-green-400 px-2 py-0.5 rounded">{contract.status}</span>
-                    </td>
-                    <td class="py-3 px-4">
-                      <a 
-                        href={`${chain.explorer}/address/${contract.address}`} 
-                        target="_blank" 
-                        rel="noopener"
-                        class="text-accent text-xs hover:underline"
-                      >
-                        View ↗
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      ))}
-    </section>
-
-    <!-- Related Registries -->
-    <section>
-      <h2 class="text-2xl font-bold text-white mb-2">Related Registries</h2>
-      <p class="text-gray-500 mb-8">Registries from related standards that ERC-8170 composes with.</p>
-      
-      {registries.related.map((chain) => (
-        <div class="mb-8">
-          <div class="flex items-center gap-3 mb-4">
-            <h3 class="text-lg font-semibold text-white">{chain.chain}</h3>
-            <span class="text-xs text-gray-500 border border-white/10 rounded px-2 py-0.5">Chain ID: {chain.chainId}</span>
           </div>
           
           <div class="overflow-x-auto">
@@ -136,7 +88,10 @@ import registries from '../data/registries.json';
     <!-- Deploy on your chain -->
     <section class="text-center py-12 border-t border-white/10">
       <h2 class="text-2xl font-bold text-white mb-4">Deploy on your chain</h2>
-      <p class="text-gray-400 mb-6">Want to deploy an ERC-8170 registry on your chain? Submit a request and we'll help you get listed.</p>
+      <p class="text-gray-400 mb-6 max-w-xl mx-auto">
+        Deploy an ERC-8171 agent binding registry on any EVM chain. 
+        Submit your deployment and we'll verify and list it here.
+      </p>
       <a href="https://github.com/blockchainsuperheroes/ai-core/issues/new?title=Registry+Submission&labels=registry&template=registry-submission.md" target="_blank" rel="noopener" class="btn-primary">
         Submit Your Registry →
       </a>

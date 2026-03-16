@@ -7,53 +7,15 @@
         {
           "name": "ANIMA Genesis",
           "address": "0x4e8D3B9Be7Ef241Fb208364ed511E92D6E2A172d",
-          "type": "ERC-8170 Token",
-          "status": "active"
+          "type": "ERC-8170 Token"
         },
         {
-          "name": "ANIMARegistry",
+          "name": "AINFTRegistry (ERC-8171)",
           "address": "0x327165c476da9071933d4e2dbb58efe2f6c9f486",
-          "type": "Agent Binding Registry",
-          "status": "active"
-        },
-        {
-          "name": "ATSBadge",
-          "address": "0x83423589256c8C142730bfA7309643fC9217738d",
-          "type": "Agent Trust Score (SBT)",
-          "status": "active"
+          "type": "Agent Binding Registry"
         }
       ],
       "explorer": "https://explorer.pentagon.games",
-      "status": "live"
-    }
-  ],
-  "related": [
-    {
-      "chain": "Ethereum Mainnet",
-      "chainId": 1,
-      "contracts": [
-        {
-          "name": "ERC-6551 Registry",
-          "address": "0x000000006551c19487814612e58FE06813775758",
-          "type": "Token-Bound Account Registry",
-          "status": "active"
-        }
-      ],
-      "explorer": "https://etherscan.io",
-      "status": "live"
-    },
-    {
-      "chain": "Base",
-      "chainId": 8453,
-      "contracts": [
-        {
-          "name": "ERC-6551 Registry",
-          "address": "0x000000006551c19487814612e58FE06813775758",
-          "type": "Token-Bound Account Registry",
-          "status": "active"
-        }
-      ],
-      "explorer": "https://basescan.org",
       "status": "live"
     }
   ]
