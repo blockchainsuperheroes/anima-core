@@ -35,6 +35,10 @@
         {
           "label": "Security",
           "href": "/docs/security"
+        },
+        {
+          "label": "Profile URI Extension",
+          "href": "/docs/profile-uri"
         }
       ]
     },
