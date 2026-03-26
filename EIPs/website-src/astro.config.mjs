@@ -6,5 +6,5 @@ export default defineConfig({
   site: 'https://erc8170.org',
   integrations: [mdx(), tailwind()],
   output: 'static',
-  outDir: '../website',
+  outDir: 'dist',
 });

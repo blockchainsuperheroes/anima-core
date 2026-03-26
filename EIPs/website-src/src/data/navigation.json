@@ -43,11 +43,24 @@
       ]
     },
     {
-      "title": "Standards",
+      "title": "Companion Standards",
       "items": [
+        {
+          "label": "ERC-721L (Licensing)",
+          "href": "/docs/erc721l"
+        },
         {
           "label": "Related Standards",
           "href": "/docs/related-standards"
+        }
+      ]
+    },
+    {
+      "title": "Builders",
+      "items": [
+        {
+          "label": "Marketplace Integration",
+          "href": "/docs/marketplace"
         }
       ]
     },
