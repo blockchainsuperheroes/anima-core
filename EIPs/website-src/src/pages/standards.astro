@@ -3,9 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import standards from '../data/standards.json';
 
 const categories = {
-  foundation: { label: 'Foundation Standards', desc: 'Established Ethereum standards that ERC-8170 builds on.' },
-  adjacent: { label: 'Related Standards', desc: 'Established and emerging standards in the broader ecosystem.' },
-  ecosystem: { label: 'Ecosystem Projects', desc: 'Projects and tools within the ERC-8170 stack.' },
+  foundation: { label: 'Core Identity Stack', desc: 'The standards that define agent identity, binding, and verification.' },
+  companion: { label: 'Companion Standards', desc: 'Optional standards that extend what agents can do with their identity.' },
+  related: { label: 'Related Standards', desc: 'Established standards that ERC-8170 acknowledges and builds upon.' },
+  composable: { label: 'What Sovereign Agents Unlock', desc: 'Once an agent has identity, these standards define what it can do in the wider ecosystem.' },
 };
 
 const statusColors = {

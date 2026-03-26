@@ -22,26 +22,26 @@
     "category": "foundation"
   },
   {
-    "id": "erc-4626",
-    "name": "ERC-4626",
-    "title": "Tokenized Vault Standard",
-    "status": "final",
-    "description": "Standard interface for tokenized vaults. Enables agents to manage DeFi positions, yield strategies, and treasury operations through a consistent interface.",
-    "relevance": "Agents with TBAs can interact with ERC-4626 vaults, enabling autonomous treasury management and yield strategies.",
-    "specUrl": "https://eips.ethereum.org/EIPS/eip-4626",
-    "ecosystemUrl": "https://erc4626.info",
+    "id": "agentcert",
+    "name": "AgentCert / ATS",
+    "title": "Agent Test Standard (7-Tier Certification)",
+    "status": "active",
+    "description": "Standardized certification for AI agent capabilities. Seven progressive tiers from basic communication (L1) through governance participation (L7). Credentials are soulbound tokens in the agent's TBA.",
+    "relevance": "Identity without verification is just a label. AgentCert proves what an agent can do. Certifications live in the agent's TBA and follow the identity.",
+    "specUrl": null,
+    "ecosystemUrl": "https://agentcert.io",
     "category": "foundation"
   },
   {
-    "id": "erc-4337",
-    "name": "ERC-4337",
-    "title": "Account Abstraction",
-    "status": "final",
-    "description": "Account abstraction for smart contract wallets. Enables gasless transactions, batched operations, and programmable execution logic for agent wallets.",
-    "relevance": "Agent TBAs can leverage account abstraction for advanced execution patterns and gasless operation.",
-    "specUrl": "https://eips.ethereum.org/EIPS/eip-4337",
-    "ecosystemUrl": "https://www.erc4337.io/docs",
-    "category": "foundation"
+    "id": "erc-721l",
+    "name": "ERC-721L",
+    "title": "Licensing-Aware NFT Standard",
+    "status": "proposed",
+    "description": "Adds on-chain, machine-readable licensing and transfer-state to NFTs. Defines rights tiers (personal use through CC0) so agents and marketplaces know exactly what an NFT holder is allowed to do.",
+    "relevance": "Companion standard. Agents need to know which NFTs are safe to use and what rights they carry. ERC-721L makes licensing explicit and queryable on-chain.",
+    "specUrl": null,
+    "ecosystemUrl": null,
+    "category": "companion"
   },
   {
     "id": "erc-6551",
@@ -52,29 +52,40 @@
     "relevance": "The foundation pattern that ERC-8171 extends. Credited as the architectural inspiration for the agent binding registry.",
     "specUrl": "https://eips.ethereum.org/EIPS/eip-6551",
     "ecosystemUrl": "https://tokenbound.org",
-    "category": "adjacent"
+    "category": "related"
   },
   {
-    "id": "erc-8004",
-    "name": "ERC-8004",
-    "title": "Trustless Agents \u2014 Discovery, Reputation & Validation",
-    "status": "draft",
-    "description": "Proposes three on-chain registries for agent economies: Identity Registry (ERC-721 based agent handles), Reputation Registry (feedback signals and scoring), and Validation Registry (hooks for zkML, TEE, staking checks). Authored by MetaMask, Ethereum Foundation, Google, and Coinbase. Payments are explicitly out of scope.",
-    "relevance": "Complementary discovery and trust layer. ANIMA (ERC-8170) is the identity/lifecycle layer (who the agent IS, its memory, cloning, self-custody). ERC-8004 is the discovery/trust layer (how agents find each other and build reputation). An ANIMA agent can register in an ERC-8004 Identity Registry on any chain for cross-chain discoverability, with agentURI pointing back to ANIMA metadata.",
-    "specUrl": "https://eips.ethereum.org/EIPS/eip-8004",
-    "ecosystemUrl": "https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098",
-    "category": "adjacent"
+    "id": "erc-4626",
+    "name": "ERC-4626",
+    "title": "Tokenized Vault Standard",
+    "status": "final",
+    "description": "Standard interface for tokenized vaults. Once an agent has identity and a TBA wallet, it can manage DeFi positions, yield strategies, and treasury operations.",
+    "relevance": "Agents with TBAs can interact with ERC-4626 vaults. This is what sovereign agents can do once they have identity, not part of the identity standard itself.",
+    "specUrl": "https://eips.ethereum.org/EIPS/eip-4626",
+    "ecosystemUrl": "https://erc4626.info",
+    "category": "composable"
+  },
+  {
+    "id": "erc-4337",
+    "name": "ERC-4337",
+    "title": "Account Abstraction",
+    "status": "final",
+    "description": "Account abstraction for smart contract wallets. Enables gasless transactions, batched operations, and programmable execution logic for agent wallets.",
+    "relevance": "Agent TBAs can leverage account abstraction for advanced execution patterns. Useful for agents operating autonomously, but not part of the identity standard.",
+    "specUrl": "https://eips.ethereum.org/EIPS/eip-4337",
+    "ecosystemUrl": "https://www.erc4337.io/docs",
+    "category": "composable"
   },
   {
     "id": "erc-7857",
     "name": "ERC-7857",
     "title": "Private Metadata for NFTs",
     "status": "draft",
-    "description": "Defines encrypted private metadata for NFTs, enabling confidential attributes that only authorized parties can access. Useful for storing sensitive agent configuration or private identity data.",
-    "relevance": "Complementary privacy approach. ERC-8170 handles identity and memory pointers; ERC-7857 could provide the encrypted metadata layer for private agent attributes.",
+    "description": "Defines encrypted private metadata for NFTs. Could provide the encrypted metadata layer for private agent attributes alongside ERC-8170's public identity pointers.",
+    "relevance": "Complementary privacy approach. ERC-8170 handles identity and memory pointers; ERC-7857 could add encrypted private attributes.",
     "specUrl": "https://eips.ethereum.org/EIPS/eip-7857",
     "ecosystemUrl": null,
-    "category": "adjacent"
+    "category": "related"
   },
   {
     "id": "eip-8126",
@@ -82,9 +93,9 @@
     "title": "Agent Registration & Verification",
     "status": "draft",
     "description": "Focuses on agent registration and verification, including wallet, endpoint, contract, and staking checks, with optional provider-based risk scoring.",
-    "relevance": "Complementary verification-focused approach. ERC-8170 answers 'what is this agent on-chain?' while EIP-8126 answers 'has this agent been checked, and by whom?' ANIMA is compatible with EIP-8126 today and any successor verification standard \u2014 the spec does not hard-depend on 8126.",
+    "relevance": "Complementary verification-focused approach. ERC-8170 answers 'what is this agent on-chain?' while EIP-8126 answers 'has this agent been checked, and by whom?'",
     "specUrl": "https://eips.ethereum.org/EIPS/eip-8126",
     "ecosystemUrl": null,
-    "category": "adjacent"
+    "category": "related"
   }
 ]
